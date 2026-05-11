@@ -52,10 +52,7 @@ if (strpos($request_uri, '/company/') !== false) {
     }
 }
 
-$valid_roles = array('partner', 'site_owner', 'administrator');
-$has_valid_role = $partner && !empty(array_intersect($valid_roles, (array) $partner->roles));
-
-if (!$has_valid_role) {
+if (!$partner || empty($partner->roles) || !in_array('partner', (array) $partner->roles)) {
     echo '<div class="container"><h1>' . __('Company Not Found', 'tour-portal') . '</h1></div>';
     get_footer();
     return;
