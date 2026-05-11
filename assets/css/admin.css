@@ -1,0 +1,318 @@
+/* Tour Portal Admin Styles */
+
+/* Meta Box Styles */
+.tour-meta-field {
+    margin-bottom: 15px;
+}
+
+.tour-meta-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #23282d;
+}
+
+.tour-meta-field input,
+.tour-meta-field select,
+.tour-meta-field textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.tour-meta-field input[type="checkbox"],
+.tour-meta-field input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.tour-meta-field .description {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* Tour List Admin Columns */
+.column-tour_type {
+    width: 10%;
+}
+
+.column-price {
+    width: 10%;
+}
+
+.column-duration {
+    width: 8%;
+}
+
+.column-partner {
+    width: 15%;
+}
+
+/* Partner Management Styles */
+.status-approved {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.status-rejected {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: #ffb900;
+    font-weight: bold;
+}
+
+/* Settings Page Styles */
+.tour-portal-settings .form-table th {
+    width: 200px;
+}
+
+.tour-portal-settings .form-table td {
+    padding: 15px 10px;
+}
+
+.tour-portal-settings .description {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+
+/* Tour Categories Grid in Admin */
+.category-thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Registration Form Styles */
+.tour-registration-form {
+    max-width: 600px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.tour-registration-form h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tour-registration-form .form-group {
+    margin-bottom: 15px;
+}
+
+.tour-registration-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.tour-registration-form input,
+.tour-registration-form textarea,
+.tour-registration-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.tour-registration-form .button {
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tour-registration-form .button:hover {
+    background: #005a87;
+}
+
+/* Alert Styles */
+.alert {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border-left: 4px solid;
+}
+
+.alert-success {
+    background: #f0f8f0;
+    border-left-color: #46b450;
+    color: #2e4d2e;
+}
+
+.alert-error {
+    background: #f8f0f0;
+    border-left-color: #dc3232;
+    color: #4d2e2e;
+}
+
+/* Tour Filter Styles */
+.tour-filter {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.tour-filter .filter-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.tour-filter .filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-filter .filter-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #23282d;
+}
+
+.tour-filter .filter-group select,
+.tour-filter .filter-group input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.tour-filter .filter-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+/* Responsive Admin Styles */
+@media screen and (max-width: 782px) {
+    .tour-filter .filter-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .tour-filter .filter-actions {
+        justify-content: stretch;
+    }
+    
+    .tour-filter .filter-actions .button {
+        flex: 1;
+    }
+}
+
+/* Tour Card Preview */
+.tour-card-preview {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    background: #fff;
+}
+
+.tour-card-preview .tour-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.tour-card-preview .tour-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 5px;
+    color: #0073aa;
+}
+
+.tour-card-preview .tour-meta {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.tour-card-preview .tour-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+/* Language Flags */
+.language-flag {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #666;
+    margin-right: 5px;
+}
+
+/* Tour Type Badges */
+.tour-type-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tour-type-badge.public {
+    background: #e7f3ff;
+    color: #0073aa;
+}
+
+.tour-type-badge.private {
+    background: #fff3e0;
+    color: #ff6b35;
+}
+
+/* Category Management */
+.category-image-upload {
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.category-image-upload:hover {
+    border-color: #0073aa;
+}
+
+.category-image-preview {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-top: 10px;
+}
