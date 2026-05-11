@@ -1,5 +1,11 @@
 # Tour Portal Theme Changelog
 
+## Version 4.3.6 - May 11, 2026
+### Fixes
+- **Role Check Reverted**: Restored original role check that only accepts 'partner' role for company-landing.php
+- **PHP 8 Compatibility**: Added empty() check before accessing $partner->roles to prevent fatal errors
+- **Removed Incorrect Roles**: Removed site_owner and administrator roles from company-landing.php - only partner role is valid for multi-operator mode
+
 ## Version 4.3.5 - May 11, 2026
 ### Fixes
 - **PHP 8 Fatal Error Fixed**: 4.3.4 introduced a fatal error — $partner->roles was accessed before the null/false check, crashing the page entirely on PHP 8 servers
